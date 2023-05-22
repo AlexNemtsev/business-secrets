@@ -13,6 +13,7 @@
 
 .header__headlines {
   display: flex;
+  justify-content: space-between;
 }
 
 .header__headlines-wrapper {
@@ -45,4 +46,16 @@
 .tags__tag {
   margin-right: 5px;
   background-color: lightgray;
+}
+
+.main__list {
+  padding-left: 15px;
+}
+
+.tasks-section__list-item::marker {
+  content: "🌵";
+}
+
+.solution-section__list-item::marker {
+  content: "🌵";
 }
