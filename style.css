@@ -151,10 +151,20 @@
 
 .solution-section__list {
   padding-top: 0;
+  padding-right: 25px;
 }
 
 .solution-section__list-item {
   margin-bottom: 15px;
+}
+
+.integration-section__headline {
+  height: var(--txt-line-height);
+  position: absolute;
+}
+
+.integration-section__article>.main__paragraph:first-child {
+  padding-top: 97px;
 }
 
 .new-segment-section {
@@ -163,21 +173,26 @@
 
 .author {
   display: flex;
-}
-
-.author__avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: lightgray;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 27px;
+  max-width: 250px;
 }
 
 .author__wrapper {
-  max-width: 190px;
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 16px;
 }
 
 .author__name {
   margin: 0;
+  font-size: 15px;
+  color: var(--txt-main-color);
+}
+
+.author__appointment {
+  color: var(--txt-second-color);
 }
 
 .footer {
