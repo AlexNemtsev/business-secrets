@@ -65,7 +65,6 @@
 }
 
 .tags {
-  color: var(--txt-second-color);
   margin-top: 15px;
 }
 
@@ -90,6 +89,11 @@
 .tags__tag {
   margin-right: 12px;
   background: var(--bg-gray);
+}
+
+.tags__tag>a {
+  color: var(--txt-second-color);
+  text-decoration: none;
 }
 
 .main__headline {
