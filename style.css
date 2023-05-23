@@ -72,6 +72,7 @@
   font-size: 17px;
   line-height: var(--txt-line-height);
   font-weight: var(--txt-fw-normal);
+  color: var(--txt-second-color);
   margin: 0;
 }
 
@@ -212,9 +213,13 @@
   color: var(--txt-second-color);
 }
 
-@media (max-width: 945px) {
+@media (max-width: 1184px) {
   .body {
     margin: 80px;
+  }
+
+  .header__headline {
+    max-width: 400px;
   }
 
   .header__headline::before {
@@ -227,5 +232,27 @@
 
   .new-segment-section {
     display: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__headline {
+    font-size: 24px;
+    margin-top: 8px;
+  }
+
+  .tags {
+    margin-top: 3px;
+    font-size: var(--txt-info-fs);
+  }
+
+  .tags__headline {
+    font-size: inherit;
+  }
+
+  .tags__list {
+    max-width: 340px;
+    height: 28px;
+    margin-top: 4px;
   }
 }
