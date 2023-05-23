@@ -10,6 +10,8 @@
   --txt-line-height: 28px;
   --txt-fw-normal: 400;
   --txt-fw-bold: 700;
+
+  --txt-info-fs: 15px;
 }
 
 .body {
@@ -180,14 +182,14 @@
 }
 
 .author__wrapper {
-  font-size: 15px;
+  font-size: var(--txt-info-fs);
   line-height: 20px;
   padding-left: 16px;
 }
 
 .author__name {
   margin: 0;
-  font-size: 15px;
+  font-size: var(--txt-info-fs);
   color: var(--txt-main-color);
 }
 
@@ -196,8 +198,14 @@
 }
 
 .footer {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  font-size: var(--txt-info-fs);
+}
+
+.footer__editor {
+  color: var(--txt-second-color);
 }
 
 @media (max-width: 945px) {
