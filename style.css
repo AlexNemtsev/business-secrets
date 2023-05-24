@@ -222,6 +222,26 @@
   color: var(--txt-second-color);
 }
 
+.footer__read-more {
+  line-height: 20px;
+  position: relative;
+  bottom: 1px;
+  left: 3px;
+}
+
+.footer__read-more::after {
+  background: transparent;
+  content: "";
+  box-sizing: border-box;
+  width: 3px;
+  height: 20px;
+  border-bottom: 1px solid white;
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  z-index: 2;
+}
+
 @media (max-width: 1184px) {
   .body {
     margin: 80px;
@@ -386,6 +406,6 @@
 
   .footer__read-more {
     margin-top: 10px;
-    line-height: 20px;
+    inset: 0;
   }
 }
